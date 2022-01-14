@@ -6,6 +6,8 @@ const getElement = (selection) => {
   throw new Error(`element 확인 바람 ${selection} 없음`);
 };
 
+
+// class Refactor
 class Counter {
   constructor(element, val) {
     this.counter = element;
@@ -41,3 +43,5 @@ class Counter {
 
 const first = new Counter(getElement(".first-counter"), 200);
 const second = new Counter(getElement(".second-counter"), 100);
+
+console.log(first)
